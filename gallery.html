@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Visit Lesotho</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <a class="logo" href="index.html">Visit Lesotho 🇱🇸</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a class="active" href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button id="darkBtn">Dark Mode</button>
+    </nav>
+</header>
+
+<main>
+    <section class="container">
+        <h1>Photo Gallery</h1>
+        <p id="galleryMsg" class="info-box">Click any image to preview it</p>
+
+        <div class="gallery-grid">
+            <img src="katse fdam.jpg" class="gallery-img" alt="Katse Dam view">
+            <img src="mountain view.jpg" class="gallery-img" alt="Mountain view">
+            <img src="afriski.webp" class="gallery-img" alt="Afriski">
+            <img src="mountain roads.webp" class="gallery-img" alt="Mountain Road">
+            <img src="lakes lesotho.jpg" class="gallery-img" alt="Lake">
+            <img src="snow.webp" class="gallery-img" alt="Snow">
+        </div>
+
+        <img id="previewImg" src="" class="hidden" alt="Preview" style="width:100%; margin-top:15px; border-radius:8px;">
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Visit Lesotho | Created by Ramorobi</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

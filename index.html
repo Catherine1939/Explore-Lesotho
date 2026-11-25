@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Visit Lesotho - Ramorobi</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <a class="logo" href="index.html">Visit Lesotho 🇱🇸</a>
+        <ul class="nav-links">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button id="darkBtn">Dark Mode</button>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <h1>Welcome to Lesotho</h1>
+        <p>The Kingdom in the Sky</p>
+        <a href="destinations.html" class="btn-yellow">Explore Destinations</a>
+        <a href="contact.html" class="btn-white">Book a Trip</a>
+    </section>
+
+    <section class="container">
+        <h2 class="center">Top Destinations</h2>
+        <input type="text" id="searchInput" placeholder="Search e.g. Katse, Sani Pass...">
+
+        <div class="center">
+            <button class="filter-btn" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="adventure">Adventure</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="culture">Culture</button>
+        </div>
+
+        <div class="cards">
+            <article class="dest-card" data-category="nature">
+                <img src="katse fdam.jpg" alt="Katse Dam water">
+                <div class="card-body">
+                    <h3>Katse Dam</h3>
+                    <p>Biggest dam in Lesotho. Boat rides, dam wall tour and amazing views.</p>
+                    <button class="btn-dark" onclick="showInfo('Katse Dam')">View Details</button>
+                </div>
+            </article>
+
+            <article class="dest-card" data-category="adventure">
+                <img src="sani pass.jpg" alt="Sani Pass mountains">
+                <div class="card-body">
+                    <h3>Sani Pass</h3>
+                    <p>Famous mountain pass linking Lesotho and South Africa.</p>
+                    <button class="btn-dark" onclick="showInfo('Sani Pass')">View Details</button>
+                </div>
+            </article>
+
+            <article class="dest-card" data-category="culture">
+                <img src="afriski.webp" alt="Afriski">
+                <div class="card-body">
+                    <h3>Afriski</h3>
+                    <p>Skiing in Africa! Visit Afriski in the Maluti Mountains.</p>
+                    <button class="btn-dark" onclick="showInfo('Afriski')">View Details</button>
+                </div>
+            </article>
+        </div>
+
+        <p id="infoBox" class="info-box">Click View Details to see more.</p>
+    </section>
+
+    <section class="container">
+        <h2>Why Visit Lesotho?</h2>
+        <button class="accordion-btn" onclick="toggleFaq('faq1')">Do I need a visa?</button>
+        <div id="faq1" class="faq-content">
+            <p>Many countries do not need a visa for short stays.</p>
+        </div>
+
+        <button class="accordion-btn" onclick="toggleFaq('faq2')">Best time to visit?</button>
+        <div id="faq2" class="faq-content hidden">
+            <p>Winter (June-Aug) for snow, Summer for hiking.</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Visit Lesotho | Created by Ramorobi</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

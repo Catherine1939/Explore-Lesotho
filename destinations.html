@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations | Visit Lesotho</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <a class="logo" href="index.html">Visit Lesotho 🇱🇸</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="destinations.html">Destinations</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button id="darkBtn">Dark Mode</button>
+
+    </nav>
+</header>
+
+<main>
+    <section class="container">
+        <h1>Top Destinations</h1>
+        <p>Katse Dam is our number 1 pick!</p>
+
+        <input type="text" id="searchInput" placeholder="Search destination...">
+
+        <div class="center">
+            <button class="filter-btn" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="adventure">Adventure</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+        </div>
+
+        <div class="cards">
+            <article class="dest-card" data-category="nature">
+                <img src="katse fdam.jpg" alt="Katse Dam">
+                <div class="card-body">
+                    <h3>Katse Dam</h3>
+                    <p>Boat rides, dam wall tour.</p>
+                    <a href="contact.html" class="btn-yellow">Book Katse Tour</a>
+                </div>
+            </article>
+
+            <article class="dest-card" data-category="adventure">
+                <img src="sani pass.jpg" alt="Sani Pass">
+                <div class="card-body">
+                    <h3>Sani Pass</h3>
+                    <p>Mountain pass with sharp bends.</p>
+                    <a href="contact.html" class="btn-yellow">Book Tour</a>
+                </div>
+            </article>
+
+            <article class="dest-card" data-category="adventure">
+                <img src="afriski.webp" alt="Afriski">
+                <div class="card-body">
+                    <h3>Afriski</h3>
+                    <p>Ski in Africa during winter.</p>
+                    <a href="contact.html" class="btn-yellow">Book Tour</a>
+                </div>
+            </article>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Visit Lesotho | Created by Ramorobi</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

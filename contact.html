@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Visit Lesotho</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <a class="logo" href="index.html">Visit Lesotho 🇱🇸</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+        <button id="darkBtn">Dark Mode</button>
+    </nav>
+</header>
+
+<main>
+    <section class="container">
+        <h1>Book Your Trip</h1>
+        <p>Want to visit Katse Dam? Fill this form.</p>
+
+        <div id="savedBooking" class="info-box hidden"></div>
+
+        <form id="bookingForm">
+            <label>Full Name</label>
+            <input type="text" id="fullName" required>
+            <small id="nameError" style="color:red"></small>
+
+            <label>Email</label>
+            <input type="email" id="email" required>
+            <small id="emailError" style="color:red"></small>
+
+            <label>Phone</label>
+            <input type="tel" id="phone" placeholder="e.g. 50000000" required>
+            <small id="phoneError" style="color:red"></small>
+
+            <label>Destination</label>
+            <select id="destination">
+                <option>Katse Dam</option>
+                <option>Sani Pass</option>
+                <option>Afriski</option>
+                <option>Maletsunyane Falls</option>
+            </select>
+
+            <label>Date</label>
+            <input type="date" id="tripDate" required>
+
+            <label>Number of People</label>
+            <input type="number" id="people" min="1" value="1">
+
+            <label>Message</label>
+            <textarea id="message" rows="3"></textarea>
+
+            <button type="submit" class="btn-yellow" style="border:none; cursor:pointer;">Submit Booking</button>
+        </form>
+
+        <div id="successMsg" class="info-box hidden">Thank you! Your booking has been saved.</div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Visit Lesotho | Created by Ramorobi</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
